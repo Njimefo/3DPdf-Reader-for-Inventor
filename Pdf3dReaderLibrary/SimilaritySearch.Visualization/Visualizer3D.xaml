@@ -1,0 +1,81 @@
+﻿<UserControl x:Class="SimilaritySearch.Visualization.Visualizer3D"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:SimilaritySearch.Visualization"
+             xmlns:wpf="http://helix-toolkit.org/wpf"
+             mc:Ignorable="d" 
+             d:DesignHeight="1000" d:DesignWidth="1000">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="7*"></RowDefinition>
+            <RowDefinition Height="68*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="197*"></ColumnDefinition>
+                <ColumnDefinition Width="803*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="0,0,1.8,-0.6">
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+
+                <Grid Grid.Row="0" Grid.Column="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                    <Border Background="DarkOliveGreen" BorderBrush="Silver" BorderThickness="1" CornerRadius="8,8,3,3">
+                        <TreeView Name="trvMenu" SelectedItemChanged="trvMenu_SelectedItemChanged" >
+
+                    </TreeView>
+                        </Border>
+
+
+                </Grid>
+            </Grid>
+            <Grid Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="2.2,0,0,-0.6">
+
+
+                <Border Background="LightGreen"  BorderBrush="Silver" BorderThickness="1" CornerRadius="8,8,3,3">
+
+                    <wpf:HelixViewport3D ZoomExtentsWhenLoaded="True" >
+
+                    <wpf:SunLight/>
+
+
+                    <ModelVisual3D x:Name="visualizer" Content="{Binding Path = Model}"/>
+
+
+                    <wpf:GridLinesVisual3D Width="8" Length="8" MinorDistance="1" MajorDistance="1" Thickness="0.01"/>
+                </wpf:HelixViewport3D>
+                  </Border>
+
+
+            </Grid>
+        </Grid>
+        <Menu x:Name="menu" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch">
+            <Menu.Items>
+                <MenuItem x:Name="openItem" Header="_Datei">
+
+                    <MenuItem Header="_Oeffnen" IsCheckable="false" Click="MenuItem_Click">
+                        <MenuItem.ToolTip>
+                            <ToolTip>
+                                3D PDF Datei öffnen
+                            </ToolTip>
+                        </MenuItem.ToolTip>
+                    </MenuItem>
+                </MenuItem>
+                <MenuItem x:Name="optionsItem" Header="_Options">
+                    <MenuItem Header="_Speichern" IsCheckable="false" Click="MenuItem_Click">
+                        <MenuItem.ToolTip>
+                            <ToolTip>
+                                3D PDF Datei speicher als XML/STL Datei
+                            </ToolTip>
+                        </MenuItem.ToolTip>
+                    </MenuItem>
+                </MenuItem>
+            </Menu.Items>
+        </Menu>
+
+    </Grid>
+</UserControl>

@@ -1,0 +1,9 @@
+call "%VS140COMNTOOLS%vsvars32"
+			mt.exe -manifest "$(ProjectDir)Addin3DPdf.X.manifest" -outputresource:"$(TargetPath)";#2
+if not exist "C:\ProgramData\Autodesk\Inventor 2017\Addins\\Addin3DPdf" mkdir "C:\ProgramData\Autodesk\Inventor 2017\Addins\Addin3DPdf" 
+			XCopy "$(TargetDir)*.*" "C:\ProgramData\Autodesk\Inventor 2017\Addins\Addin3DPdf" /Y /R
+		    XCopy "$(ProjectDir)Autodesk.Addin3DPdf.Inventor.addin" "C:\ProgramData\Autodesk\Inventor 2017\Addins\Addin3DPdf" /Y /R   
+
+	XCopy "$(TargetDir)..\..\..\..\HOOPS_Exchange\bin\win64\*.*" "C:\ProgramData\Autodesk\Inventor 2017\Addins\Addin3DPdf" /Y /R
+
+XCopy "$(TargetDir)..\..\..\..\Pdf3dReaderLibrary\Pdf3DReader\bin\Debug\*.*" "C:\ProgramData\Autodesk\Inventor 2017\Addins\Addin3DPdf" /Y /R

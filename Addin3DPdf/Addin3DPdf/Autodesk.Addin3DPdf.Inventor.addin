@@ -1,0 +1,23 @@
+<Addin Type="Translator">
+  <!--Created for Autodesk Inventor Version 21.0-->
+  <ClassId>{5a2d6e09-72a1-454e-a12c-83671073a027}</ClassId>
+  <ClientId>{5a2d6e09-72a1-454e-a12c-83671073a027}</ClientId>
+  <DisplayName>Addin3DPdf</DisplayName>
+  <Description>Addin3DPdf</Description>
+  <Assembly>Addin3DPdf.dll</Assembly>
+
+  <SupportsOpenInto>idw;.dwg;.ipt</SupportsOpenInto>
+  <SupportsImportInto>idw;.dwg;.ipt</SupportsImportInto>
+  <SupportsSaveCopyAsFrom>.idw;.dwg;.ipt;.iam</SupportsSaveCopyAsFrom>
+  <FileExtensions>.pdf</FileExtensions>
+  <FilterText Language="1033">Pdf 3D File (*.pdf)</FilterText>
+  <SupportsOpen>1</SupportsOpen>
+  <SupportsImport>1</SupportsImport>
+  <SupportsSaveCopyAs>1</SupportsSaveCopyAs>
+  <LoadOnStartUp>1</LoadOnStartUp>
+  <UserUnloadable>1</UserUnloadable>
+  <Hidden>0</Hidden>
+  <ExtraInfo>1</ExtraInfo>
+
+
+</Addin>

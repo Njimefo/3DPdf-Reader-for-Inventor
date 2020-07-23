@@ -1,0 +1,5 @@
+H:\svn\Softwareentwicklungsprojekt SoSe 2017\Team 5\PDF3DImporter\STL\bin\Debug\QuantumConcepts.Formats.StereoLithography.dll
+H:\svn\Softwareentwicklungsprojekt SoSe 2017\Team 5\PDF3DImporter\STL\bin\Debug\QuantumConcepts.Formats.StereoLithography.pdb
+H:\svn\Softwareentwicklungsprojekt SoSe 2017\Team 5\PDF3DImporter\STL\obj\Debug\STL.csprojResolveAssemblyReference.cache
+H:\svn\Softwareentwicklungsprojekt SoSe 2017\Team 5\PDF3DImporter\STL\obj\Debug\QuantumConcepts.Formats.StereoLithography.dll
+H:\svn\Softwareentwicklungsprojekt SoSe 2017\Team 5\PDF3DImporter\STL\obj\Debug\QuantumConcepts.Formats.StereoLithography.pdb

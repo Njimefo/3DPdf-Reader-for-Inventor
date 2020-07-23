@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
+
+  <assemblyIdentity name="Addin3DPdf" version="1.0.0.0"></assemblyIdentity>
+
+  <clrClass clsid="{5a2d6e09-72a1-454e-a12c-83671073a027}" progid="Addin3DPdf.TrAddInServer" threadingModel="Both" name="Addin3DPdf.TrAddInServer" runtimeVersion=""></clrClass>
+
+  <file name="Addin3DPdf.dll" hashalg="SHA1"></file>
+
+</assembly>
